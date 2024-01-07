@@ -8,10 +8,9 @@ while so_n < 0:
 # Output
 tong_binh_phuong = 0
 # Process
-so_hang = 1
-while so_hang <= so_n:
-    so_hang *= so_hang
-    tong_binh_phuong += so_hang
-    so_hang += 1
+temp = so_n
+while temp >= 1:
+    tong_binh_phuong += temp**2
+    temp -= 1
 
 print(f'Tổng bình phương của {so_n} là: {tong_binh_phuong}')
